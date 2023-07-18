@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { MyContext } from "./MyContext";
 const Waga = () => {
-  const { someValue, someMethod } = useContext(MyContext);
+  const { someColor, cngColor } = useContext(MyContext);
 
   return (
     <div>
       Waga
-      <button onClick={() => someMethod("green")}> Green </button>
-      <button onClick={() => someMethod("red")}> red </button>
-      <button onClick={() => someMethod("yellow")}> yellow </button>
+      <button onClick={() => cngColor("green")}> Green </button>
+      <button onClick={() => cngColor("red")}> red </button>
+      <button onClick={() => cngColor("yellow")}> yellow </button>
     </div>
   );
 };
